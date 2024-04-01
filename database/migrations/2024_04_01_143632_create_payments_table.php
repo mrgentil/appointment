@@ -17,7 +17,6 @@ return new class extends Migration
             $table->decimal('amount', 10, 2); // Montant du paiement
             $table->date('payment_date');// Date du paiement
             $table->enum('payment_method', ['Carte crédit', 'Mobile Money','Espèces'])->default('Espèces');// Méthode de paiement (carte de crédit, espèces, etc.)
-            $table->string('payment_method');
             $table->timestamps();
         });
     }
