@@ -22,7 +22,6 @@ class LoginRequest extends FormRequest
     public function rules()
     {
         return [
-            'email' => 'required|email',
             'phone' => 'required|string',
             'password' => 'required|string'
         ];
@@ -30,8 +29,8 @@ class LoginRequest extends FormRequest
     public function messages()
     {
         return [
-            'email.required' => 'The email field is required.',
-            'phone.required' => 'The phone field is required.'
+            'phone.required' => 'Le phone est obligatoire.',
+
         ];
     }
 }
